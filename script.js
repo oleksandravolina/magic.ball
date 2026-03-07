@@ -1,31 +1,26 @@
 const answers = [
-"Yes",
-"No",
-"Very likely",
-"Ask later",
-"Definitely",
-"The stars say yes",
-"Uncertain"
+"images/yes.png",
+"images/no.png",
+"images/maybe.png",
+"images/later.png",
+"images/dfyes.png",
+"images/defno.png"
 ];
 
 function getAnswer(){
 
-const answerBox = document.getElementById("answer");
-
-answerBox.style.opacity = 0;
-answerBox.innerText = "";
-
-document.querySelector(".container").classList.add("shake");
-
-setTimeout(()=>{
-
 const random = Math.floor(Math.random()*answers.length);
 
-answerBox.innerText = answers[random];
-answerBox.style.opacity = 1;
+document.getElementById("answerImage").src = answers[random];
 
-document.querySelector(".container").classList.remove("shake");
+document.getElementById("home").classList.add("hidden");
+document.getElementById("result").classList.remove("hidden");
 
-},800);
+}
+
+function goBack(){
+
+document.getElementById("result").classList.add("hidden");
+document.getElementById("home").classList.remove("hidden");
 
 }
