@@ -2,6 +2,7 @@ body{
 margin:0;
 background:black;
 font-family:Arial;
+overflow:hidden;
 }
 
 .container{
@@ -13,37 +14,51 @@ justify-content:center;
 align-items:center;
 }
 
-/* картинка */
 .background{
 width:100%;
 height:100vh;
 object-fit:contain;
 }
 
-/* відповідь у кулі */
+/* текст відповіді */
 #answer{
 position:absolute;
 top:40%;
 left:50%;
 transform:translate(-50%,-50%);
-font-size:26px;
+font-size:34px;
 color:white;
-text-shadow:0 0 20px #b700ff;
+text-shadow:0 0 20px #a000ff,0 0 40px #a000ff;
 font-weight:bold;
 text-align:center;
 width:60%;
+opacity:0;
+transition:opacity 0.8s ease;
 }
 
 /* кнопка */
 .magic-button{
 position:absolute;
-bottom:18%;
-padding:16px 34px;
-font-size:18px;
+bottom:22%;
+padding:18px 45px;
+font-size:20px;
 border:none;
-border-radius:30px;
+border-radius:35px;
 background:linear-gradient(45deg,#a000ff,#ff00ff);
 color:white;
-box-shadow:0 0 20px purple;
+box-shadow:0 0 25px purple;
 cursor:pointer;
+}
+
+/* ефект тряски */
+.shake{
+animation:shake 0.6s;
+}
+
+@keyframes shake{
+0%{transform:translate(-50%,-50%) rotate(0deg);}
+25%{transform:translate(-50%,-50%) rotate(2deg);}
+50%{transform:translate(-50%,-50%) rotate(-2deg);}
+75%{transform:translate(-50%,-50%) rotate(2deg);}
+100%{transform:translate(-50%,-50%) rotate(0deg);}
 }
