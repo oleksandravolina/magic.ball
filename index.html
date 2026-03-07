@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Magic Ball</title>
 <link rel="stylesheet" href="style.css">
@@ -9,14 +8,24 @@
 
 <body>
 
-<div class="container">
+<!-- головний екран -->
+<div id="home" class="screen">
 
-<img src="ball.png" class="background">
-
-<div id="answer">Ask your question</div>
+<img src="images/ball.png" class="background">
 
 <button onclick="getAnswer()" class="magic-button">
-Get Answer
+Отримати відповідь
+</button>
+
+</div>
+
+<!-- екран відповіді -->
+<div id="result" class="screen hidden">
+
+<img id="answerImage" class="background">
+
+<button onclick="goBack()" class="back-button">
+Назад
 </button>
 
 </div>
