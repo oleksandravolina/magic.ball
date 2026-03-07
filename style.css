@@ -1,0 +1,31 @@
+body {
+  background: radial-gradient(circle, #1a0033, #000);
+  color: white;
+  text-align: center;
+  font-family: Arial;
+  margin-top: 100px;
+}
+
+.ball {
+  width: 250px;
+  margin: 30px;
+}
+
+button {
+  padding: 15px 30px;
+  background: purple;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a000ff;
+}
+
+#answer {
+  font-size: 24px;
+  margin: 20px;
+}
