@@ -1,16 +1,16 @@
 const answers = [
 "Yes",
 "No",
-"Maybe",
+"Very likely",
 "Ask later",
 "Definitely",
-"I don't think so",
-"Very likely"
+"Uncertain",
+"The stars say yes"
 ];
 
-function getAnswer() {
+function getAnswer(){
 
-const random = Math.floor(Math.random() * answers.length);
+const random = Math.floor(Math.random()*answers.length);
 
 document.getElementById("answer").innerText = answers[random];
 
