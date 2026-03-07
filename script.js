@@ -3,7 +3,7 @@ const answers = [
 "no.png",
 "maybe.png",
 "later.png",
-"dfyes.png",
+"defyes.png",
 "defno.png"
 ];
 
