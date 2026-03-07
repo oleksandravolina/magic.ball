@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Magic Ball</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Magic Ball 🔮</h1>
+<div class="container">
 
-<img src="ball.png" class="ball">
+<img src="ball.png" class="background">
 
 <div id="answer">Ask your question</div>
 
-<button onclick="getAnswer()">Get Answer</button>
+<button onclick="getAnswer()" class="magic-button">
+Get Answer
+</button>
+
+</div>
 
 <script src="script.js"></script>
 
