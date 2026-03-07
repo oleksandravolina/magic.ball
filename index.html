@@ -12,7 +12,7 @@
 <!-- Головний екран -->
 <div id="home" class="screen">
 
-<img src="ball.png" class="background" alt="Magic Ball">
+<img src="ball.png" class="background">
 
 <button onclick="getAnswer()" class="magic-button">
 Отримати відповідь
@@ -23,13 +23,16 @@
 <!-- Екран відповіді -->
 <div id="result" class="screen hidden">
 
-<img id="answerImage" class="background" alt="Answer">
+<img id="answerImage" class="background">
 
 <button onclick="goBack()" class="back-button">
 Назад
 </button>
 
 </div>
+
+<!-- Магічна музика -->
+<audio id="magicSound" src="magic.mp3"></audio>
 
 <script src="script.js"></script>
 
