@@ -1,31 +1,47 @@
 body {
-  background: radial-gradient(circle, #1a0033, #000);
-  color: white;
-  text-align: center;
-  font-family: Arial;
-  margin-top: 100px;
+margin:0;
+font-family:Arial;
+background:black;
 }
 
-.ball {
-  width: 250px;
-  margin: 30px;
+.container{
+position:relative;
+width:100%;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
-button {
-  padding: 15px 30px;
-  background: purple;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 18px;
-  cursor: pointer;
+.background{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
-button:hover {
-  background: #a000ff;
+.magic-button{
+position:absolute;
+bottom:120px;
+padding:18px 40px;
+font-size:20px;
+border:none;
+border-radius:30px;
+background:linear-gradient(45deg,#a000ff,#ff00ff);
+color:white;
+box-shadow:0 0 20px purple;
+cursor:pointer;
 }
 
-#answer {
-  font-size: 24px;
-  margin: 20px;
+#answer{
+position:absolute;
+top:45%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:32px;
+color:white;
+text-shadow:0 0 20px #a000ff;
+font-weight:bold;
+text-align:center;
+width:60%;
 }
