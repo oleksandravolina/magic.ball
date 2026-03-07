@@ -2,6 +2,7 @@ body{
 margin:0;
 background:black;
 font-family:Arial;
+overflow:hidden;
 }
 
 .screen{
@@ -23,9 +24,12 @@ height:100vh;
 object-fit:contain;
 }
 
+/* кнопка отримати відповідь */
 .magic-button{
 position:absolute;
-bottom:20%;
+bottom:17%;
+left:50%;
+transform:translateX(-50%);
 padding:18px 40px;
 font-size:20px;
 border:none;
@@ -36,6 +40,7 @@ box-shadow:0 0 25px purple;
 cursor:pointer;
 }
 
+/* кнопка назад */
 .back-button{
 position:absolute;
 top:40px;
