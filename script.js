@@ -1,10 +1,10 @@
 const answers = [
-"images/yes.png",
-"images/no.png",
-"images/maybe.png",
-"images/later.png",
-"images/dfyes.png",
-"images/defno.png"
+"yes.png",
+"no.png",
+"maybe.png",
+"later.png",
+"dfyes.png",
+"defno.png"
 ];
 
 function getAnswer(){
