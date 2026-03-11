@@ -25,24 +25,28 @@ object-fit:contain;
 }
 
 /* кнопка отримати відповідь */
-position: absolute;
-bottom: 15%;
-left: 50%;
-transform: translateX(-50%);
+.magic-button{
+position:absolute;
 
-padding: 14px 40px;
-font-size: 18px;
+top:73%;
+left:50%;
 
-border: none;
-border-radius: 30px;
+transform:translate(-50%, -50%);
 
-background: linear-gradient(45deg,#a000ff,#ff00ff);
-color: white;
+padding:12px 26px;
+font-size:17px;
 
-box-shadow: 0 0 15px rgba(255,0,255,0.6);
-cursor: pointer;
+border:none;
+border-radius:28px;
 
-white-space: nowrap;
+background:linear-gradient(45deg,#a000ff,#ff00ff);
+color:white;
+
+box-shadow:0 0 15px rgba(255,0,255,0.6);
+
+cursor:pointer;
+white-space:nowrap;
+}
 
 /* кнопка назад */
 .back-button{
