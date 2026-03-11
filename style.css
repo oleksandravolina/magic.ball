@@ -25,45 +25,46 @@ object-fit:contain;
 }
 
 /* кнопка отримати відповідь */
+Oto zaktualizowany kod CSS dla przycisku .magic-button. Zwiększyłem jego wymiary i zmodyfikowałem pozycję top, aby idealnie pasował do dolnej ramki z napisem "ШАР ЗНАЕТ..." na obrazku.
+
+CSS
 .magic-button {
   position: absolute;
-  /* Zmieniono z 73% na ok. 78%, aby trafić w dolny napis */
-  top: 78.5%; 
+  /* Zwiększono z ~78.5%, aby trafić w dolną ramkę, ok. 84.5% */
+  top: 84.5%; 
   left: 50%;
   transform: translate(-50%, -50%);
 
-  /* Dopasowanie rozmiaru do ramki na obrazku */
-  width: 200px; 
-  height: 45px;
-  padding: 0; /* Padding wyzerowany przy sztywnym width/height dla precyzji */
+  /* Zwiększono rozmiar, aby idealnie pasował do ramki */
+  width: 280px;  /* Poprzednio 200px */
+  height: 55px;  /* Poprzednio 45px */
+  padding: 0;
   
-  font-size: 14px;
+  font-size: 16px; /* Nieco większa czcionka dla czytelności */
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px; /* Zwiększone odstępy dla stylu fantasy */
 
   border: none;
-  border-radius: 30px;
+  border-radius: 35px; /* Dopasowany radius do nowej wysokości */
 
-  /* Gradient zbliżony do stylu z grafiki */
+  /* Ten sam gradient */
   background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); 
-  /* Jeśli chcesz ten jaskrawy róż z Twojego kodu: */
-  /* background: linear-gradient(45deg, #a000ff, #ff00ff); */
   
   color: white;
-  box-shadow: 0 0 20px rgba(160, 0, 255, 0.7);
+  /* Mocniejszy blask dla większego przycisku */
+  box-shadow: 0 0 25px rgba(160, 0, 255, 0.8);
 
   cursor: pointer;
   white-space: nowrap;
   
-  /* Dodano płynne przejście dla efektu kliknięcia */
+  /* Płynne przejście */
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .magic-button:active {
-  transform: translate(-50%, -48%) scale(0.98);
+  transform: translate(-50%, -48%) scale(0.97);
 }
-
 /* кнопка назад */
 .back-button{
 position:absolute;
